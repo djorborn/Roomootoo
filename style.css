@@ -1,0 +1,87 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #1e1e1e;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.remote {
+    /* width: calc(100% - 20px);
+    height: calc(100% - 20px); */
+    box-sizing: border-box;
+    background: #1f1f1f;
+    overflow: hidden;
+    margin-left: -20px;
+    position: relative;
+
+}
+/* .border {
+    border: solid 1px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+} */
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+.col {
+/*     background: blue; */
+    width: 100%;
+    text-align: center;
+/*     border: solid 1px; */
+    position: relative;
+}
+button {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.arrows {
+    border-radius: 100%;
+/*     overflow: hidden; */
+    width: 300px;
+    height: 300px;
+/*     border: solid 1px; */
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+    transform: rotatez(45deg);
+    padding: 20px;
+    position: relative;
+}
+.arrows button {
+    border: none;
+    background: red;
+    width: 50%;
+    height: 50%;
+    display: block;
+    float: left;
+    transform: rotatez(-45deg);
+}
+.arrows button , .ok{
+    background: transparent;
+    border: none;
+}
+.icon {
+    font-size: 40px;
+    background: #33333311;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    color: #fff;
+}
+.ok {
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    transform: scale(1)
+}
+.icon:hover {
+    background: #33333333
+}
