@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roomootoo</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,16 +11,16 @@
         <!-- <div class="border"> -->
             <div class="row">
                 <div class="col">
-                    <button class="back button" name="back">
+                    <button class="back button" name="back" title="Back">
                         <span class="icon">
-                            <i class="fas fa-backspace"></i>
+                            <img src="images/back.svg" width="50" style="margin-top: -20px; transform: translateY(6px) translateX(-2px)"/>
                         </span>
                     </button>
                 </div>
                 <div class="col">
-                    <button class="button home" name="home">
+                    <button class="button home" name="home" title="Home">
                         <span class="icon">
-                            <i class="fas fa-home"></i>
+                                <img src="images/home.svg" width="40" style="transform: scale(1.2)" />
                         </span>
                     </button>
                 </div>
@@ -34,28 +31,28 @@
                      
                             <button class="up" name="up">
                             <span class="icon">
-                                <i class="fas fa-arrow-up"></i>
+                                <img src="images/arrow.svg" width="40" style="transform: rotateZ(-90deg) translate(5px) translateY(1px)">
                             </span>
                         </button>
                         <button class="right" name="right">
                             <span class="icon">
-                                <i class="fas fa-arrow-right"></i>
+                                <image src="images/arrow.svg" width="40" style="transform: translate(5px) translateY(1px)">
                             </span>
                         </button>
                         <button class="left" name="left">
                             <span class="icon">
-                                <i class="fas fa-arrow-left"></i>
+                                <img src="images/arrow.svg" width="40" style="transform: rotateZ(-180deg) translate(5px)">
                             </span>
                         </button>
                         <button class="down" name="down">
                             <span class="icon">
-                                <i class="fas fa-arrow-down"></i>
+                                <img src="images/arrow.svg" width="40" style="transform: rotateZ(90deg) translate(5px) translateY(1px)">
                             </span>
                         </button>
                      
-                        <button class="ok" name="select">
-                            <span class="icon">
-                                <i class="fas fa-check-circle"></i>
+                        <button class="ok" name="select" title="Select">
+                            <span class="icon" style="font-weight: 700; font-size: 30px" >
+                                OK
                             </span>
                         </button>
                     </div>
@@ -64,17 +61,24 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <button class="star button" name="menu">
+                    <button class="star button" name="menu" title="Menu">
                         <span class="icon">
-                            *
+                            <img src="images/menu.svg" width="40"/>
+                        </span>
+                    </button>
+                </div>
+                <div class="" style=" margin-left: -40px; margin-right: -40px">
+                    <button style="transform: scale(.5) translate(20px) translateX(-20px)" title="Settings">
+                        <span class="icon">
+                            <img src="images/settings.svg" alt="settings">
                         </span>
                     </button>
                 </div>
                 <div class="col">
                       <a href="javascript:window.close()">
-                            <button class="exit button" name="exit">
-                                    <span class="icon">
-                                        exit
+                            <button class="exit button" name="exit" title="Close Roomootoo">
+                                    <span class="icon" style="font-size: 25px">
+                                        close
                                     </span>
                               </button>
                       </a>
