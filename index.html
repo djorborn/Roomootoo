@@ -70,7 +70,7 @@
                 <div class="" style=" margin-left: -40px; margin-right: -40px">
                     <button style="transform: scale(.5) translate(20px) translateX(-20px)" title="Settings">
                         <span class="icon">
-                            <img src="images/settings.svg" alt="settings">
+                            <img src="images/settings.svg" alt="settings" width="40">
                         </span>
                     </button>
                 </div>
@@ -92,6 +92,33 @@
         for(var i = 0; i < btns.length; i++) {
             btns[i].onclick = function () {
                 fetch('http://192.168.1.2:8060/keypress/' + this.name, {method: 'POST'})
+            }
+        }
+
+        window.onkeyup = function (e) {
+            // console.log(e.keyCode)
+            switch(e.keyCode) {
+                case 37:
+                    fetch('http://192.168.1.2:8060/keypress/left', {method: 'POST'});
+                    break;
+                case 38:
+                    fetch('http://192.168.1.2:8060/keypress/up', {method: 'POST'});
+                    break;
+                case 39:
+                    fetch('http://192.168.1.2:8060/keypress/right', {method: 'POST'});
+                    break;
+                case 40:
+                    fetch('http://192.168.1.2:8060/keypress/down', {method: 'POST'});
+                    break;
+                case 13:
+                    fetch('http://192.168.1.2:8060/keypress/select', {method: 'POST'});
+                    break;
+                case 8:
+                    fetch('http://192.168.1.2:8060/keypress/back', {method: 'POST'});
+                    break;
+                case 36:
+                    fetch('http://192.168.1.2:8060/keypress/home', {method: 'POST'});
+                    break;
             }
         }
     </script>
